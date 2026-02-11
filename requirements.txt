@@ -1,0 +1,5 @@
+tensorflow
+tensorflow.keras
+ultralytics 
+opencv-python
+tqdm

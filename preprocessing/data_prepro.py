@@ -71,8 +71,35 @@ def extract_faces_yolo(video_path,
     print("Total faces saved:", saved_count)
 
 
-input_root = "C:\\Users\\RGUKT\\Desktop\\deepfake\\CelebDF_final"         
-output_root = "dataset_faces"  
+    print("Total faces saved:", saved_count)
+
+
+# Use paths relative to the current script or project root
+current_dir = os.path.dirname(os.path.abspath(__file__))
+project_root = os.path.dirname(current_dir)
+
+# Default paths assuming standard structure
+input_root = os.path.join(project_root, "CelebDF_final")
+output_root = os.path.join(project_root, "dataset_faces")
+
+if __name__ == "__main__":
+    import argparse
+    
+    parser = argparse.ArgumentParser(description="Extract faces from videos using YOLO.")
+    parser.add_argument("--input_root", type=str, default=input_root, help="Root directory of input videos (train/test/val structure)")
+    parser.add_argument("--output_root", type=str, default=output_root, help="Output directory for extracted faces")
+    parser.add_argument("--model_path", type=str, default=os.path.join(project_root, "models", "yolov8n-face.pt"), help="Path to YOLO model")
+
+    args = parser.parse_args()
+    
+    input_root = args.input_root
+    output_root = args.output_root
+    model_path = args.model_path
+
+    print(f"Input Root: {input_root}")
+    print(f"Output Root: {output_root}")
+    print(f"Model Path: {model_path}")
+
 
 splits = ["train", "test",  "val"]
 

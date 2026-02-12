@@ -1,4 +1,14 @@
 CelebDF(v2)/
 dfd/
 CelebDF_final/
+<<<<<<< HEAD
 original/
+=======
+dataset_faces/
+<<<<<<< HEAD
+tf210_env/
+check_tf_gpu.py/
+=======
+
+>>>>>>> 96a1f41ca7b474ac9da5e32acfb0c142f654c26c
+>>>>>>> d57f889e81fd68d9c1e7a299fe63e5f62c2e14ea

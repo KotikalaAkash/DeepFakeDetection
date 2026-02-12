@@ -2,3 +2,5 @@ CelebDF(v2)/
 dfd/
 CelebDF_final/
 dataset_faces/
+tf210_env/
+check_tf_gpu.py/

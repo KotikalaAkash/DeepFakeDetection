@@ -28,3 +28,8 @@ Additionally, many existing models lack transparency in their decision-making pr
   * Generalization
 
 ---
+
+
+## 🎥 Demo Video
+
+<video src="deepfake-gradcam.mp4" controls width="600"></video>

@@ -33,3 +33,10 @@ Additionally, many existing models lack transparency in their decision-making pr
 ## 🎥 Demo Video
 
 👉 [Click here to watch the demo](deepfake-gradcam.mp4)
+
+
+## 📊 Streamlit application
+
+<p align="center">
+  <img src="Deepfake streamlit.jpeg" width="500"/>
+</p>
